@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-const about = () => {
+const Error = () => {
 	return (
 		<Layout>
-			about page
-			{/* 37:12 */}
+			Error page
 		</Layout>
 	)
 }
 
-export default about
+export default Error
