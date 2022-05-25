@@ -4,7 +4,8 @@ import Layout from '../components/Layout'
 const Error = () => {
 	return (
 		<Layout>
-			Error page
+			<h1>404</h1>
+			<p>Щость тут не так, такої сторінки немае</p>
 		</Layout>
 	)
 }
