@@ -15,6 +15,9 @@ body {
 .none {
 	display: none;
 }
+.show {
+	display: block;
+}
 a {
 	text-decoration: none;
 	color: $darkText;
@@ -39,10 +42,31 @@ h1 {
 .column {
 	width: 50%;
 }
-.nav {
+.navigation {
+	position: relative;
 	height: 8.5rem;
 	align-items: center;
 	justify-content: space-between;
+}
+.active-link {
+	color: $btnBG;
+}
+.nav-btn {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 2rem;
+	width: 2rem;
+	> svg {
+		font-size: 2rem;
+	}
+}
+.soc-link {
+	> svg {
+		font-size: 2rem;
+	}
 }
 header {
 	background-color: #fff;
@@ -58,19 +82,19 @@ header {
 		margin-left: 2rem;
 		> h1 {
 			line-height: 0.9;
-			width: 60rem;
+			width: 80%;
 			padding-bottom: 0.5rem;
 		}
 		> p {
 			font-size: 2rem;
 			color: $p700;
 			line-height: 1.1;
-			width: 60rem;
+			width: 80%;
 		}
 	}
 }
 
-nav {
+.nav {
 	ul {
 		display: flex;
 		margin: 0;
