@@ -23,6 +23,9 @@ const Navbar = () => {
           <li>
             <Link to="/blog" activeClassName="active-link" onClick={() => setShow(false)}>Нотатки</Link>
           </li>
+          <li>
+            <Link to="/about" activeClassName="active-link" onClick={() => setShow(false)}>Автор</Link>
+          </li>
 					<li>
 						<a href="http://" className="soc-link"><AiFillGithub/></a>	
 					</li>

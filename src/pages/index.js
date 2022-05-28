@@ -6,7 +6,7 @@ export default function Home() {
   return (
 	<Layout>
 		<Headers />
-		<section>
+		<section className="container">
           <div className="row">
             <div className="main">test for home page</div>
           </div>

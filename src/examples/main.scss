@@ -1,122 +1,165 @@
 @import "vars";
 html {
-	font-size: $baseFontSize;
+  font-size: $baseFontSize;
 }
 body {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-	margin: 0;
-	overflow-x: hidden;
-	font-size: 1.6rem;
-	line-height: 1.476;
-	color: $darkText;
-	font-weight: 400;
-	background-color: $forHeaderCard;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  line-height: 1.476;
+  color: $darkText;
+  font-weight: 400;
+  background-color: $forHeaderCard;
 }
 .none {
-	display: none;
+  display: none;
 }
 .show {
-	display: block;
+  display: block;
 }
 a {
-	text-decoration: none;
-	color: $darkText;
+  text-decoration: none;
+  color: $darkText;
 }
-h1, h2, h3, p {
-	margin: 0;
-	padding: 0;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 h1 {
-	font-size: 4rem;
-	font-weight: 700;
+  font-size: 4rem;
+  font-weight: 700;
 }
 .grid {
-	display: grid;
+  display: grid;
 }
 .flex {
-	display: flex;
+  display: flex;
 }
 .container {
-	padding: 0 6rem;
+  padding: 0 6rem;
+}
+.content {
+  padding: 4rem 13rem 5rem;
+  .head {
+    border-bottom: 1px solid #333;
+    > h1 {
+      padding-bottom: 1.9rem;
+    }
+    > span {
+      display: block;
+      padding-bottom: 3rem;
+			font-weight: 700;
+      color: $h800;
+			> span {
+				color: $p600;
+				font-weight: 400;
+			}
+    }
+  }
+  .info {
+    padding-top: 3.7rem;
+    > p {
+      color: $p600;
+      > a {
+        font-weight: 700;
+        color: $darkText;
+      }
+    }
+    > span {
+      display: block;
+      font-style: italic;
+      font-weight: 700;
+      color: $h800;
+      padding: 1.6rem 0;
+    }
+  }
 }
 .column {
-	width: 50%;
+  width: 50%;
+}
+.image {
+  width: 100%;
 }
 .navigation {
-	position: relative;
-	height: 8.5rem;
-	align-items: center;
-	justify-content: space-between;
+  position: relative;
+  height: 8.5rem;
+  align-items: center;
+  justify-content: space-between;
 }
 .active-link {
-	color: $btnBG;
+  color: $btnBG;
 }
 .nav-btn {
-	background-color: transparent;
-	box-shadow: none;
-	border: none;
-	padding: 0;
-	margin: 0;
-	height: 2rem;
-	width: 2rem;
-	> svg {
-		font-size: 2rem;
-	}
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 2rem;
+  width: 2rem;
+  > svg {
+    font-size: 2rem;
+  }
 }
 .soc-link {
-	> svg {
-		font-size: 2rem;
-	}
+  > svg {
+    font-size: 2rem;
+  }
 }
 header {
-	background-color: #fff;
-	.img-box {
-	text-align: end;
-		> img {
-			width: 47rem;
-			height: 32rem;
-		}
-	}
-	.text-box {
-		align-self: center;
-		margin-left: 2rem;
-		> h1 {
-			line-height: 0.9;
-			width: 80%;
-			padding-bottom: 0.5rem;
-		}
-		> p {
-			font-size: 2rem;
-			color: $p700;
-			line-height: 1.1;
-			width: 80%;
-		}
-	}
+  background-color: #fff;
+  .img-box {
+    text-align: end;
+    > img {
+      width: 47rem;
+      height: 32rem;
+    }
+  }
+  .text-box {
+    align-self: center;
+    margin-left: 2rem;
+    > h1 {
+      line-height: 0.9;
+      width: 80%;
+      padding-bottom: 0.5rem;
+    }
+    > p {
+      font-size: 2rem;
+      color: $p700;
+      line-height: 1.1;
+      width: 80%;
+    }
+  }
 }
 
 .nav {
-	ul {
-		display: flex;
-		margin: 0;
-		padding: 0;
-		li {
-			margin-right: 2rem;
-			list-style-type: none;
-			&:last-child{
-				margin-right: 0;
-			}
-			a {
-				font-weight: bold;
-			}
-		}
-	}
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-right: 2rem;
+      list-style-type: none;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        font-weight: bold;
+      }
+    }
+  }
 }
 .main {
-	grid-area: main;
+  grid-area: main;
 }
 
 footer {
-	grid-area: footer;
-	align-self: end;
+  grid-area: footer;
+  align-self: end;
 }
 @import "media";
