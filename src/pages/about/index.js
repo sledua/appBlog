@@ -10,7 +10,7 @@ const About = () => {
           src="../../assets/image/about/cartoon-galaxy-background.jpg"
           alt="cartoon-galaxy-background"
           height={380}
-          placeholder="tracedSVG"
+          placeholder='blurred'
           layout="constrained"
           className="image"
         />

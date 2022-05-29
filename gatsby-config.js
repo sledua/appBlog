@@ -9,13 +9,7 @@ module.exports = {
 	siteMetadata: {
     title: "Simply Recipes",
     description: "Nice and clean recipes site",
-    author: "@johnsmilga",
-    person: { name: "john", age: 32 },
-    simpleData: ["item 1", "item 2"],
-    complexData: [
-      { name: "john", age: 32 },
-      { name: "susan", age: 21 },
-    ],
+    author: "@sledua",
   },
   plugins: [
 		`gatsby-plugin-sass`,
@@ -33,6 +27,13 @@ module.exports = {
       options: {
         name: `image`,
         path: `${__dirname}/src/assets/image/`,
+      },
+    },
+		{
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/assets/data/`,
       },
     },
   ],

@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Headers from "../components/Headers"
+import AllNote from "../components/AllNote"
 import "../examples/main.scss"
-import Test from "../examples/Test"
+
 export default function Home() {
   return (
     <Layout>
@@ -10,8 +11,8 @@ export default function Home() {
       <section className="container">
         <div className="row">
           <div className="main">
-						<Test/>
-						{/* 5:01 */}
+						<AllNote/>
+				
 					</div>
         </div>
       </section>

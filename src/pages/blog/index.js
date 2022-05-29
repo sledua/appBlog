@@ -1,13 +1,14 @@
 import React from "react"
+import AllNote from "../../components/AllNote"
 import Layout from "../../components/Layout"
-import Image from "../../examples/image"
+
 const index = () => {
   return (
     <Layout>
       <section className="container">
         <div className="row">
           <div className="main">
-						<Image/>
+						<AllNote/>
           </div>
         </div>
       </section>
