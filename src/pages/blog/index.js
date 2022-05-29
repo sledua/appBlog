@@ -7,7 +7,6 @@ const index = () => {
       <section className="container">
         <div className="row">
           <div className="main">
-            <h2>hello blog</h2>
 						<Image/>
           </div>
         </div>

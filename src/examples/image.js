@@ -8,9 +8,8 @@ const Image = () => {
   return (
     <Wrapper>
       <article>
-        <h3>default image position</h3>
         <StaticImage
-          src="../assets/img/posts/astronaut-dj-with-turntable-open-space.jpg"
+          src="../assets/image/posts/astronaut-dj-with-turntable-open-space.jpg"
           alt="text img default"
 					height={380}
 					placeholder='tracedSVG'

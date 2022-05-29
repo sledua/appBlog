@@ -1,5 +1,5 @@
 import React from "react"
-import brain from "../assets/img/mainPage/brain.jpg"
+import brain from "../assets/image/mainPage/brain.jpg"
 const Logos = () => {
   return (
     <header>
