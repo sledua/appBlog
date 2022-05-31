@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../../components/Layout"
+import AllNote from "../../components/AllNote"
 
 const About = () => {
   return (
@@ -52,6 +53,10 @@ const About = () => {
 						</p>
           </div>
         </div>
+				<div>
+					<h5>Look new</h5>
+					<AllNote/>
+				</div>
       </section>
     </Layout>
   )
